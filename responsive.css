@@ -1,0 +1,73 @@
+@media (max-width: 768px)
+{
+	#menubar{height: 70px;}
+	#menu1{display: none;}
+	
+	#cart{display: none;}
+	
+	.search{width: 60%;}
+	
+	.search:focus{width: 60%;}
+	
+	.searchbutton{width: 30%;}
+	
+	#searchholder{padding: 0px 0px 0px 0px;}
+	
+	#signin{display: none;}
+	
+	#menu2{height: 100%;}
+	
+	#searches{display: none;}
+	
+	#signinimg{text-align: right;}
+	
+	#cartimg{display: none;}
+	
+	#logo{height: 50px; width: 50px;}
+	
+	#cartinsign{display: inline-block;}
+	
+	#navigation-button
+	{height: 40px;
+	width: 40px;}
+	
+	#navholder{display: table-cell;}
+	
+	#sidebar {display: none;}
+	
+	#main-image
+	{float: none;
+	height: 100%;
+	width: 100%;}
+	
+	#section-1{max-height: 300px; min-height: 200px;}
+	
+	.break{display: none;}
+	
+	.Productos-holder{height: 60vh; padding: 0px;}
+	
+	.Productos-holder .Producto
+	{height: 48%;
+	width: 48%;
+	margin: 1%;
+	}
+	
+	.orders{padding-top: 15%;}
+	
+	.orders font{font-size: 24px;}
+	
+	.orders .buttoncart{height: 35px; width: 35px;}
+	
+	.orders .button{width: 70%; height: 35px;}
+	
+	.facilities-holder{height: 25vh;}
+	
+	.inset font:nth-last-child(1){display: none;}
+	
+	.inset font:nth-of-type(1){font-size: 14px;}
+	
+	.res-footer{display: block;}
+	
+	#footer{display: none;}
+	
+}

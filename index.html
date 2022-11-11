@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Tienda Virtual UTSC</title>
+	<link rel="icon" type="image/png" href="imagenes/logo.png">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="responsive.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<div id="load_screen"><div id="loading">Cargando Pagina</div></div>
+  
+<!--NAV INICIADO-->
+
+<div id="nav" style="background-color:rgba(199, 0, 61, 0.9); height:0vh; width:100vw; transition:0.5s ease-in-out; position:fixed; top:0%; left:0%; z-index:5; overflow: hidden;">
+	
+	<br><br><br>
+	<h2 style="margin-left: 40px; font-family: calibri; color: white;">Top Categorias</h2>
+		<ul class="lisFt">
+			<li><a href="/Pagina web/Busqueda/index.html" class="list-item-white">Descuentos</a></li>
+			<li><a href="" class="list-item-white">lorem ipsu</a></li>
+			<li><a href="" class="list-item-white">Ofertas Especiales</a></li>
+			<li><a href="" class="list-item-white">lorem ipsu</a></li>
+		</ul>
+
+		<h2 style="margin-left: 40px; font-family: calibri; color: white;">Mas Categorias</h2>
+		
+		<ul class="list">
+		
+			<li><a href="" class="list-item-white">Cortes Laser</a></li>
+			<li><a href="" class="list-item-white">MDF</a></li>
+			<li><a href="" class="list-item-white">Acrilico</a></li>
+			<li><a href="" class="list-item-white">Metal</a></li>
+			<li><a href="" class="list-item-white">Ropa</a></li>
+			<li><a href="" class="list-item-white">Souvenirs</a></li>
+			<li><a href="" class="list-item-white">lorem ipsu</a></li>
+			<li><a href="" class="list-item-white">lorem ipsu</a></li>
+			<li><a href="" class="list-item-white">lorem ipsu</a></li>
+			
+		</ul>
+		<h3><a href="" style="margin-left: 40px; font-family: calibri; color: white; text-decoration: none;">Tienda Virtual UTSC</a></h3>
+		<h3><a href="" style="margin-left: 40px; font-family: calibri; color: white; text-decoration: none;">Centro de Ayuda</a></h3>
+		<h3><a href="" style="margin-left: 40px; font-family: calibri; color: white; text-decoration: none;">Danos tu Opinion</a></h3>
+		<h3><a href="" style="margin-left: 40px; font-family: calibri; color: white; text-decoration: none;">Descarga la App</a></h3>
+</div>
+
+<!--NAV TERMINADO-->
+
+<!--**MENU BAR INICIADO**-->
+
+<div id="menubar">
+
+	<table height="25%" width="100%" border="0" style="background-color: darkgreen;" id="menu1">
+	
+		<tr class="normaltext">
+			<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="normaltext">Tienda Virtual UTSC</a></td>	
+			<td width="15%"><a href="" class="normaltext">Inicio</a></td>
+			<td width="10%"><a href="" class="normaltext">Centro de Ayuda</a></td>
+			<td width="15%"><a href="" class="normaltext">Danos tu opinion</a></td>
+			<td width="10%"><a href="" class="normaltext">Descarga la App</a></td>
+		</tr>
+	</table>
+
+	<table height="75%" width="100%" border="0" style="background-color:green" id="menu2">
+		<tr>
+			<td width="5%" id="navholder">
+				<div onClick="navigationBar()" id="navigation-button">
+
+					<div id="bar1"></div>
+					<div id="bar2"></div>
+					<div id="bar3"></div>
+
+				</div>
+			</td>
+			
+			<td width="15%">
+				<center><img src="imagenes/utsc.png" id="logo"></center>
+			</td>
+
+			<td width="65%" style="text-align: center;" id="searches">
+				
+				<input type="text" placeholder="Buscar Productos..." class="search"> <input type="button" Value="Buscar" class="searchbutton">
+				
+			</td>
+
+			<td width="5%" style="text-align:center;" id="cart">
+				<a href="Carrito/index.html" style="color:white;font-size:18;font-family:calibri;text-decoration:none;">Carrito</a>
+			</td>
+
+			<td width="5%" id="cartimg">
+				<a href="" style="text-decoration:none;"><img src="https://imgur.com/Lg2zurD.png" height="30px" width="30px"></a>
+			</td>
+
+			<td width="5%" style="text-align:center;" id="signin">
+				<a href="Login/IniciarSesion.html" style="color:white;font-size:18;font-family:calibri;text-decoration:none;">Iniciar Sesion</a>
+			</td>
+
+			<td width="5%" id="signinimg">
+				<a href="" style="text-decoration:none;"><img src="https://imgur.com/4GaP18L.png" height="25px" width="25px"></a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="" style="text-decoration:none;"><img src="https://imgur.com/Lg2zurD.png" height="25px" width="25px" id="cartinsign"></a>&nbsp;
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+<!--**MENU BAR TERMINADO**-->
+
+<br><br><br><br><br class="break"><br class="break">
+
+<!--**PRIMER SECTION INICIADO*-->
+
+<div id="section-1">
+
+	<div id="sidebar">
+		
+		<h2 style="margin-left: 40px; font-family: calibri;">Top Categorias</h2>
+		
+		<ul class="list">
+			<li><a href="" class="list-item">Descuentos</a></li>
+			<li><a href="" class="list-item">Ofertas de hoy</a></li>
+			<li><a href="" class="list-item">Ofertas Especiales</a></li>
+			<li><a href="" class="list-item">Proyectos Personalizados</a></li>
+		</ul>
+
+		<h2 style="margin-left: 40px; font-family: calibri;">Mas Categorias:</h2>
+		
+		<ul class="list">
+		
+			<li><a href="" class="list-item">Cortes Laser</a></li>
+			<li><a href="" class="list-item">MDF</a></li>
+			<li><a href="" class="list-item">Acrilico</a></li>
+			<li><a href="" class="list-item">Metal</a></li>
+			<li><a href="" class="list-item">Ropa</a></li>
+			<li><a href="" class="list-item">Souvenirs</a></li>
+			<li><a href="" class="list-item">Lorem ipsu</a></li>
+			<li><a href="" class="list-item">Lorem ipsu</a></li>
+			<li><a href="" class="list-item">Lorem ipsu</a></li>
+			
+		</ul>
+		
+		<div style="height:22%;">
+			<center>
+				<br>
+				<img src="imagenes/logo.png" height="90px" width="90px">
+				<br>
+				<font face="calibri"></font>
+			</center>
+		</div>
+
+	</div>
+
+	<div id="main-image">
+		<img src="imagenes/covid19-7.jpg" height="100%" width="132%">
+	</div>
+	
+</div>
+	
+	
+<!--**PRIMER SECTION TERMINADO**-->
+
+<!--**SECTION 2 INICIADO**-->
+
+<h3 class="heading">PRODUCTOS DE TENDENCIA</h3>
+
+<div class="Productos-holder">
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/camisa.avif">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/llavero.jpeg">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/corte-laser-y-grabado-madera.jpg">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/cartel grab1.jfif">
+	</div>
+	
+</div>
+
+<!--**SECTION 2 TERMINADO**-->
+
+<br>
+
+<!--**SEPARADOR ANUNCIO**-->
+
+<center>
+<img src="imagenes/meojra.jpg" width="90%" style="cursor: pointer;">
+</center>
+
+<!--**SEPARADOR ANUNCIO TERMINADO**-->
+
+<!--**SECTION 3 INICIADO**-->
+
+<h3 class="heading">MÁS VENDIDOS</h3>
+
+<div class="Productos-holder">
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/p1 laser.jfif">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/llavero2.jfif">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/cart2.jpg">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">Rs. 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/cart2.jpg">
+	</div>
+	
+</div>
+
+<!--**SECTION 3 TERMINADO**-->
+
+<!--**SECTION 4 INICIADO**-->
+
+<h3 class="heading">OFERTAS DEL DÍA</h3>
+
+<div class="Productos-holder">
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/camisa2.jpg">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/llav2.webp">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/cam2.jpg">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/grab1.jfif">
+	</div>
+	
+</div>
+
+<!--**SECTION 4 TERMINADO**-->
+
+<!--**SECTION 5 INICIADO**-->
+
+<h3 class="heading">FAVORITOS DE TODOS LOS TIEMPOS</h3>
+
+<div class="Productos-holder">
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/meojra.jpg">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/pro1.jfif">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">	
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/camisa2.webp">
+	</div>
+
+	<div class="Producto">
+		<div class="orders">
+			<font face="calibri" size="+3" color="#555">MX 2700</font>
+			<br><br>
+			<input type="button" value="Ordenar ahora" class="button">
+			<br><br>
+			<input type="image" src="https://imgur.com/VBjaFlG.png" class="buttoncart">
+		</div>
+		<img src="imagenes/llaverofin.jfif">
+	</div>
+	
+</div>
+
+<!--**SECTION 5 TERMINADO**-->
+
+<br>
+
+<!--**SEPARADOR AUNUNCIO 2**-->
+
+<center>
+<img src="imagenes/mejora tu futuro.jpg" width="90%" style="cursor:pointer;">
+</center>
+
+<!--**RANDOM ADVERTISEMENT 2 FINISHED**-->
+
+<br><br class="break">
+
+<!--**FACILITIES SECTION INICIADO*-->
+
+<div class="facilities-holder">
+
+	<div class="inset">
+		<center>
+			<br><br class="break">
+			<img src="https://imgur.com/4GRejW9.png">
+			<br>
+			<font face="calibri" size="4" color="#555555"><b>PAGOS 100% SEGUROS</b></font>
+			<br><br>
+			<font face="calibri" size="2" color="#999999"><b>Se aceptan todas las principales tarjetas de crédito y débito</b></font>
+		</center>
+	</div>
+
+	<div class="inset">
+		<center>
+			<br><br class="break">
+			<img src="https://imgur.com/7gztEpH.png">
+			<br>
+			<font face="calibri" size="4" color="#555555"><b>Seguridad</b></font>
+			<br><br>
+			<font face="calibri" size="2" color="#999999"><b>Lorem<br>ipsu</b></font>
+		</center>
+	</div>
+
+	<div class="inset">
+		<center>
+			<br><br class="break">
+			<img src="https://imgur.com/KbxO6RT.png">
+			<br>
+			<font face="calibri" size="4" color="#555555"><b>CENTRO DE AYUDA</b></font>
+			<br><br>
+			<font face="calibri" size="2" color="#999999"><b>Lorem<br>ipsu</b></font>
+		</center>
+	</div>
+
+	<div class="inset">
+			<center>
+			<br><br class="break">
+			<img src="https://imgur.com/D0bbN97.png">
+			<br>
+			<font face="calibri" size="4" color="#555555"><b>Comprar en la App</b></font>
+			<br><br>
+			<font face="calibri" size="2" color="#999999"><b>Lorem<br>ipsu</b></font>
+		</center>
+	</div>
+	
+</div>
+
+<!--**FACILITIES SECTION TERMINADO*-->
+
+<br>
+
+<!--**FOOTER INICIADO**-->
+<div style="width: 100%; background-color:#F5F5F5;">
+
+	<br>
+
+	<table border="0" width="94%" height="30vh" align="center" id="footer">
+
+		<tr style="font-size:15px;color:#333;font-weight:bold; cursor: default;" height="10%">
+			<td width="20%">Informacion de politicas</td>
+			<td>Lorem ipsu</td>
+			<td>Lorem Ipsu</td>
+			<td>¿Necesitas Ayuda?</td>
+			<td>Suscribirse</td>
+		</tr>
+
+		<tr height="0%">
+			<td width="20%"><a href="">Privacidad y Politicas</a></td>
+			<td width="17%"><a href="">Acerca de nosotros</a></td>
+			<td width="17%"><a href="">Tienda Online</a></td>
+			<td width="16%"><a href="">FAQ</a></td>
+			<td rowspan="2" width="30%">
+			<input type="text" placeholder="Tu Correo Electronico" class="search-2"><input type="button" value="SUBSCRIBE" class="searchbutton-2">
+			</td>
+		</tr>
+
+		<tr height="0%">
+			<td><a href="">Terminos de venta</a></td>
+			<td><a href="">lorem ipsu</a></td>
+			<td><a href="">Vender</a></td>
+			<td><a href="">Contactanos</a></td>
+		</tr>
+
+		<tr height="0%">
+			<td><a href="">Terminos de uso</a></td>
+			<td><a href="">lorem ipsu</a></td>
+			<td><a href="">Anuncio</a></td>
+			<td></td>
+			<td rowspan="2">
+			<font color="#666666">Regístrese ahora para recibir actualizaciones sobre promociones y cupones. </font><a href="" style="color:cornflowerblue;text-decoration:none;">O Descarga Nuestra App</a></td>
+		</tr>
+
+		<tr height="0%">
+			<td><a href="">Terms & Condition for English Sign-On</a></td>
+			<td><a href="">Blog</a></td>
+			<td><a href="">Preguntas de los medios</a></td>
+			<td></td>
+
+		</tr>
+			<tr height="0%">
+			<td><a href="">Informe de abuso y política de eliminación</a></td>
+			<td><a href="">lorem ipsu</a></td>
+			<td><a href="">lorem ipsu</a></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr height="0%">
+			<td></td>
+			<td><a href="">lorem ipsu</a></td>
+			<td><a href="">Lorem ipsu</a></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+	</table>
+
+<!--*****RESPONSIVE FOOTER INICIADO*****-->
+
+<div class="res-footer">
+	<ul style="list-style: none; padding: 0px; margin: 0px;">
+		<li>
+			<h3 class="res-footer-heading" onClick="footerItem0()">Informacion de politicas <div class="arrow">+</div></h3>
+				<ul class="res-footer-list">
+					<li><a href="">lorem ipsu</a></li>
+					<li><a href="">lorem ipsu</a></li>
+					<li><a href="">lorem ipsu</a></li>
+					<li><a href="">lorem ipsu</a></li>
+					<li><a href="">lorem ipsu</a></li>
+				</ul>
+			<hr width="100%" align="left">
+		</li>
+		<li>
+			<h3 class="res-footer-heading" onClick="footerItem1()">lorem ips <div class="arrow">+</div></h3>
+				<ul class="res-footer-list">
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+					</ul>
+			<hr width="100%" align="left">
+		</li>
+		<li>
+			<h3 class="res-footer-heading" onClick="footerItem2()">Lorem ip <div class="arrow">+</div></h3>
+				<ul class="res-footer-list">
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">Lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+						<li><a href="">lorem ipsu</a></li>
+					</ul>
+			<hr width="100%" align="left">
+		</li>
+		<li>
+			<h3 class="res-footer-heading" onClick="footerItem3()">Need Help? <div class="arrow">+</div></h3>
+				<ul class="res-footer-list">
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			<hr width="100%" align="left">
+		</li>
+	</ul>
+	<br>
+	<font color="#666666">Register now to get updates on promotions and coupons.</font><a href="" style="color:cornflowerblue;text-decoration:none;">Or Download our App</a>
+	
+</div>
+<!--*****RESPONSIVE FOOTER TERMINADO*****-->
+
+<br>
+<center>
+<font face="calibri" size="3" color="#666"><b>Diseñado por Daniel Alejandro Rodriguez Lopez</b></font>
+</center>
+<hr width="80%" noshade>
+<br>
+</div>
+</body>
+<script>
+	
+	var list = document.getElementsByClassName("res-footer-list");
+	var arrow = document.getElementsByClassName("arrow");
+	
+	function navigationBar()
+{
+	if(document.getElementById("nav").style.height == "0vh")
+	{
+	document.getElementById("bar1").style.transform="rotate(45deg)";
+	document.getElementById("bar1").style.top="40%";
+	document.getElementById("bar2").style.opacity="0";
+	document.getElementById("bar3").style.transform="rotate(-45deg)";
+	document.getElementById("bar3").style.top="40%";
+	document.getElementById("navigation-button").style.transform="rotate(90deg)";
+	document.getElementById("menu2").bgColor="#c7003d";
+	document.getElementById("nav").style.overflow="auto";
+			if (window.matchMedia('screen and (max-width:768px)').matches)
+			{
+				document.getElementById("nav").style.height="100vh";
+			}
+			else
+			{
+				document.getElementById("nav").style.height="50vh";
+			}
+	}
+	
+	else
+	{
+	document.getElementById("bar1").style.transform="rotate(0deg)";
+	document.getElementById("bar1").style.top="15%";
+	document.getElementById("bar2").style.opacity="1";
+	document.getElementById("bar3").style.transform="rotate(0deg)";
+	document.getElementById("bar3").style.top="65%";
+	document.getElementById("navigation-button").style.transform="rotate(0deg)";
+	document.getElementById("nav").style.height="0vh";
+	document.getElementById("menu2").bgColor="#e40046";
+	}
+}
+	
+function footerItem0()
+{
+	if(list[0].style.display == "block")
+		{
+			list[0].style.display="none";
+			arrow[0].style.transform="rotate(180deg)";
+		}
+	else
+		{
+			list[0].style.display="block";
+			arrow[0].style.transform="rotate(45deg)";
+		}
+}
+	
+function footerItem1()
+{
+	if(list[1].style.display == "block")
+		{
+			list[1].style.display="none";
+			arrow[1].style.transform="rotate(180deg)";
+		}
+	else
+		{
+			list[1].style.display="block";
+			arrow[1].style.transform="rotate(45deg)";
+		}
+}
+	
+function footerItem2()
+{
+	if(list[2].style.display == "block")
+		{
+			list[2].style.display="none";
+			arrow[2].style.transform="rotate(180deg)";
+		}
+	else
+		{
+			list[2].style.display="block";
+			arrow[2].style.transform="rotate(45deg)";
+		}
+}
+	
+function footerItem3()
+{
+	if(list[3].style.display == "block")
+		{
+			list[3].style.display="none";
+			arrow[3].style.transform="rotate(180deg)";
+		}
+	else
+		{
+			list[3].style.display="block";
+			arrow[3].style.transform="rotate(45deg)";
+		}
+}
+  
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+</script>
+</html>
